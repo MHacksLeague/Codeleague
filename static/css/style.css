@@ -52,6 +52,39 @@
 	color: #d0d0d0;
 }
 
+.hackathon-list {
+
+}
+
+.hackathon-list a {
+	text-decoration: none
+}
+
+.hackathon-list .hackathon-list-item {
+	padding: 20px 20px 20px 20px;
+}
+
+
+.hackathon-list .hackathon-title {
+	float: right;
+	margin-top: 3px;
+}
+
+.hackathon-list .hackathon-project {
+	font-size: 30px;
+	float: left;
+	margin-top: 5px;
+}
+
+.row-project-title, .row-project-description {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.hackathon-list .hackathon-project-description {
+
+}
+
 /*.profile .details .icons {
 
 }*/

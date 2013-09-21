@@ -12,7 +12,7 @@ def HackerProfile(request):
 def Ranking(request):
 	c = {}
 
-	user_profile = UserProfile.objects.get(user=request.user)
-	c['user_profile'] = user_profile
+	# user_profile = UserProfile.objects.get(user=request.user)
+	# c['user_profile'] = user_profile
 
 	return render_to_response("ranking.html", c)
