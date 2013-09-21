@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel = "stylesheet" href = "css/bootstrap.css">
     <link rel = "stylesheet" href = "css/bootstrap-responsive.css"
     <!-- Latest compiled and minified CSS -->
@@ -11,8 +13,52 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">  
   </head>
-
+    <style media="screen" type="text/css">
+        
+    #home {
+    background: url(mhacks.jpg) 50% 0 repeat fixed; min-height: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    }
+    
+    #home article {
+    height: 458px;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    }
+    
+    #about {
+    background: url(MLH.pnggithub) 50% 0 repeat fixed; min-height: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    }
+    
+    #about article {
+    height: 458px;
+    position: absolute;
+    text-align: center; 
+    top: 150px; 
+    width: 100%;
+    }
+        
+        </style>
   <body>
+      <section id="home" data-type="background" data-speed="10">
+      </section>
+      
+      <section id="about" data-type="background" data-speed="10">
+      </section>
+      
             <div id="fb-root"></div>
       <script>
           window.fbAsyncInit = function() {
@@ -70,9 +116,9 @@
                             <h1>Hackers Unite</h1>
                             <p class="lead">Welcome the the Hackers Unite!</p>
                             <br><br><br>
-                            <p><a href="Register.html" class="btn btn-success btn-large" style = "height:50px; width:200px"><font size = 5>Are you a hacker?</font></a> &nbsp; &nbsp;
+                            <p><a href="Register.html" class="btn btn-success btn-large" style = "height:50px; width:275px"><font size = "5"><input type="image" img src="[/images.jpg]" style="height:20px; width:20px/> &nbsp; Are you a hacker?</font></a> &nbsp; &nbsp;
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-                            <a href="Register.html" class="btn btn-success btn-large"  style = "height:50px; width:250px"><font size = 5>Are you a hackathon organizer?</a></p>
+                            <a href="Register.html" class="btn btn-success btn-large"  style = "height:50px; width:320px"><font size = 5>Are you a hackathon organizer?</a></p>
                         </div>
                         <div class="container">
                             <div class="row-fluid">
