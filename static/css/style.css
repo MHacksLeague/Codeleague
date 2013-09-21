@@ -85,6 +85,38 @@
 
 }
 
+#ranking-table table {
+	border-spacing: 2px;
+	border: 1px solid #e5e5e5;
+}
+
+#ranking-table table td {
+	border-top: 1px solid #f3f3f3;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#ranking-table thead tr {
+	background-color: #fafafa;
+}
+
+#rankings {
+	max-width: 750px;
+}
+
+#ranking-table table td .total-score{
+	color: #20beff;
+}
+
+/*#ranking-table {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-radius: 4px 4px 0 0;
+	box-shadow: none;
+}*/
+
 /*.profile .details .icons {
 
 }*/
