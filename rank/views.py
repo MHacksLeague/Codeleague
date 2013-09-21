@@ -15,4 +15,4 @@ def Ranking(request):
 	user_profile = UserProfile.objects.get(user=request.user)
 	c['user_profile'] = user_profile
 
-	return render_to_response("static/ranking.html", c)
+	return render_to_response("ranking.html", c)
