@@ -102,11 +102,12 @@ ROOT_URLCONF = 'Codeleague.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'Codeleague.wsgi.application'
 
+PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	'/home/andrei/Prog/hackathon/Codeleague/tpl',
+	os.path.join(PROJECT_ROOT, 'tpl'),
 )
 
 INSTALLED_APPS = (
