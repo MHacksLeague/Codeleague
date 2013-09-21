@@ -3,6 +3,4 @@ Trackathon
 
 Track your achievements, scores, projects from hackathons.
 
-* To use 
-
-** python -m SimpleHTTPServer 8080
+Run `python -m SimpleHTTPServer 8080` in the directory of the project
