@@ -10,14 +10,14 @@ class UserProfile(models.Model):
 	score = property(get_score)
 
 	def get_score:
-		score = 0
+		total_score = 0
 
 		results = Result.objects.filter(user_profile=self.id)
 
 		for result in results:
-			score += result.points
+			total_score += result.score
 
-		return score
+		return total_score
 	# def get_rank:
 
 
@@ -29,4 +29,4 @@ class Result(models.Model):
 	user_profile = models.ForeignKey('UserProfile')
 	hackathon = models.ForeignKey('Hackathon')
 	rank = models.IntegerField()
-	points = models.IntegerField()
+	score = models.IntegerField()

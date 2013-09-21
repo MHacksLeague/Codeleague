@@ -6,4 +6,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^', 'main.views.index'),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^profile/?', 'rank.views.HackerProfile'),
+    url(r'^ranking/?', 'rank.views.Ranking'),
 )
