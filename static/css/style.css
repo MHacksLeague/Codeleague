@@ -103,6 +103,10 @@
 	max-width: 750px;
 }
 
+#ranking-table table td .total-score{
+	color: #20beff;
+}
+
 /*#ranking-table {
 	margin-left: 0;
 	margin-right: 0;
