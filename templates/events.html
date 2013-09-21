@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="tree"><a href="http://trychill.com">Chill</a> > <strong>My Chills</strong></div>
+
+	<div class="prettyprint">
+
+<div class="wide_green_btn" onclick="javascript:window.location='create/'">I want to chill</div>
+
+  </div>
+  <div class="bs-docs-example">
+<h1 class="notop">My Chills</h1>
+
+{% if not attending %}
+<p>You aren't attending any chills.</p>
+{% else %}
+<ul class="chills">
+{% for e in attending %}
+	<li>    
+<div class="cover_main_pic" style="background:url(/static/img/413019_3735481983545_250699641_o.jpg);">
+
+
+<div class="profile_pic"> <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c205.44.551.551/s160x160/525862_10150955651267740_1921747919_n.jpg"></div>
+
+  <div class="profile_info" onclick="javascript:window.location='{{ e.event.facebookId }}'">{{ user.user.name }}
+  <div class="description">wants to chill tomorrow night</div>
+<div class="floaty_right">
+
+<p class="more">+ 5</p>
+  <div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+<div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+<div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+</div>
+
+
+
+</div>
+</li>
+{% endfor %}
+</ul>	
+{% endif %}
+
+<br><br>
+
+<h1 class="notop">Chill Invitations</h1>
+  
+
+{% if not invitations %}
+		<p>You haven't been invited to any chills.</p>
+		{% else %}
+
+ <ul class="chills">
+
+{% for e in invitations %}
+
+  <li>    
+<div class="cover_main_pic" style="background:url(/static/img/413019_3735481983545_250699641_o.jpg);">
+
+
+<div class="profile_pic"><img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn1/c205.44.551.551/s160x160/525862_10150955651267740_1921747919_n.jpg"></div>
+
+  <a href="/events/{{ e.event.facebookId }}"><div class="profile_info">{{ e.user.facebook_name }}
+  <div class="description">wants to chill tomorrow night</div></a>
+<div class="floaty_right">
+
+<p class="more">+ 5</p>
+  <div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+<div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+<div class="circle_pic" style="background:url(http://c296170.r70.cf1.rackcdn.com/60e/65f2ab6c1677c592352f1cdf7051874f603b5e989dcbcceab471fb63c90c07da2dc7b2a7c155d1f33b15f38b97a2204ce9e337cc0dedfbd873d341c38b74e11e.jpg) no-repeat center center;"></div>
+
+</div>
+
+
+
+</div>
+</li>
+		{% endfor %}
+		</ul>	
+{% endif %}
+       
+          </div>
+{% endblock %}
