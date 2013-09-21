@@ -4,6 +4,10 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
+	url(r'^static/(?P<path>.*)$', 'django.views.static.serve'),
+	url(r'^profile/?', 'rank.views.HackerProfile'),
+    url(r'^ranking/?', 'rank.views.Ranking'),
     url(r'^', 'main.views.index'),
     url(r'^admin/', include(admin.site.urls)),
+
 )
