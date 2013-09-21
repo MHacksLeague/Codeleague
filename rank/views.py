@@ -1,15 +1,15 @@
 from django.shortcuts import render_to_response
 from rank.models import *
 
-def HackerProfile:
+def HackerProfile(request):
 	c = {}
 
-	user_profile = UserProfile.objects.get(user=request.user)
-	c['user_profile'] = user_profile
+	# user_profile = UserProfile.objects.get(user=request.user)
+	# c['user_profile'] = user_profile
 
-	return render_to_response("static/profile.html", c)
+	return render_to_response("templates/profile.html", c)
 
-def Ranking:
+def Ranking(request):
 	c = {}
 
 	user_profile = UserProfile.objects.get(user=request.user)
