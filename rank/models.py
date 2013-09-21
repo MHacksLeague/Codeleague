@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 class UserProfile(models.Model):
 	user = models.ForeignKey('User')
 	first_name = models.CharField(max_length=30)
@@ -25,6 +23,7 @@ class UserProfile(models.Model):
 
 class Hackathon(models.Model):
 	name = models.CharField(max_length=30)
+
 
 class Result(models.Model):
 	user_profile = models.ForeignKey('UserProfile')
