@@ -1,12 +1,78 @@
-<div class="" id="loginModal">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css">
+                <link rel = "stylesheet" href = "css/bootstrap.css">
+                    <link rel = "stylesheet" href = "css/bootstrap-responsive.css"
+                        <!-- Latest compiled and minified CSS -->
+                        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+                            
+                            <!-- Optional theme -->
+                            <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+                                </head>
+    
+    <body>
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                // init the FB JS SDK
+                FB.init({
+                        appId      : 321980914612967,                        // App ID from the app dashboard
+                        channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+                        status     : true,                                 // Check Facebook Login status
+                        xfbml      : true                                  // Look for social plugins on the page
+                        });
+                
+                // Additional initialization code such as adding Event Listeners goes here
+            };
+            
+            // Load the SDK asynchronously
+            (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/all.js";
+             fjs.parentNode.insertBefore(js, fjs);
+             }(document, 'script', 'facebook-jssdk'));
+            </script>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    
+                    <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+                    <a class="brand" href="#">Code League</a>
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+                        <li><a href="Profile_Page.html">Profile Page</a></li>
+                        <li><a href="Rankings.html">Rankings</a></li>
+                        <li><a href="Events.html">Events</a></li>
+                    </ul>
+                    </ul>
+                    
+                    <div class="nav-collapse collapse">
+                        <!-- .nav, .navbar-search, .navbar-form, etc -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="hero-unit">
+            <div class="container">
+                <h1>Trackathon</h1>
+                <p class="lead">Learn more about your fellow hackers, and find out which ones are the best!</p><div class="" id="loginModal">
     <div class="modal-header">
-        <h3>Don't have an Account?</h3>
-    </div>
+        <h1>Login Page</h1>
+            </div>
     <div class="modal-body">
         <div class="well">
-            <ul class="nav nav-tabs">
-                <li><a href="#create" data-toggle="tab">Create Account</a></li>
-            </ul>
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane active in" id="login">
                     <form class="form-horizontal" action='' method="POST">
@@ -35,6 +101,11 @@
                                 <!-- Button -->
                                 <div class="controls">
                                     <button class="btn btn-success">Login</button>
+                                    <h3>Don't have an Account?</h3>
+                                    <ul class="nav nav-tabs">
+                                        <li><a href="Register.html" data-toggle="tab">Create Account</a></li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </fieldset>
