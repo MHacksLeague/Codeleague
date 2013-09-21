@@ -29,6 +29,23 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+.profile .details .icons {
+	padding-right: 5px;
+	color: #d0d0d0;
+}
+
+.profile .details .icons:hover {
+	color: #495961;
+}
+
+.profile .details .icon-row {
+	padding-left: 15px;
+}
+
+.profile .details .user-attribute {
+	color: #d0d0d0;
+}
+
 /*.profile .details .icons {
 
 }*/
