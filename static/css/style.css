@@ -96,7 +96,7 @@
 }
 
 #ranking-table thead tr {
-	background-color: #fafafa;
+	background-color: #f7f7f7;
 }
 
 #rankings {
@@ -105,6 +105,14 @@
 
 #ranking-table table td .total-score{
 	color: #20beff;
+}
+
+#ranking-table table thead>tr>th {
+	border: none;
+}
+
+#ranking-table .text-center {
+	text-align: center;
 }
 
 /*#ranking-table {
